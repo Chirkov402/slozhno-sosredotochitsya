@@ -10,7 +10,6 @@ body {
   max-inline-size: 1024px;
   margin: 0 auto;
   block-size: 100%;
-  font-family: var(--font-family);
   font-size: 18px;
   font-weight: 400;
 }
@@ -36,10 +35,6 @@ picture {
   padding: 0;
 }
 
-.title-color-pink {
-  background: var(--title-color-pink);
-}
-
 button,
 a {
   color: currentColor;
@@ -48,40 +43,5 @@ a {
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
-}
-
-.record::before {
-  content: "";
-  position: absolute;
-  border-left: 1px solid var(--angular-color);
-  border-bottom: 1px solid var(--angular-color);
-  left: 20px;
-  bottom: 20px;
-  width: 25px;
-  height: 25px;
-}
-
-@media (width < 768px) and (width >= 375px) {
-  .record::before {
-    left: 10px;
-    bottom: 17px;
-  }
-}
-
-.record::after {
-  content: "";
-  position: absolute;
-  border-right: 1px solid var(--angular-color);
-  border-top: 1px solid var(--angular-color);
-  right: 20px;
-  top: 20px;
-  width: 25px;
-  height: 25px;
-}
-
-@media (width < 768px) and (width >= 375px) {
-  .record::after {
-    right: 10px;
-    top: 10px;
-  }
+  appearance: none;
 }
