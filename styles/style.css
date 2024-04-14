@@ -110,7 +110,7 @@
 }
 
 .header__theme-menu-button {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 400;
   color: var(--angular-color);
   line-height: 100%;
