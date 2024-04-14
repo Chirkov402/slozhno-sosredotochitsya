@@ -2,16 +2,10 @@
 .page {
   background: var(--background-image) no-repeat top center,
     var(--background-color);
-  background-size: auto 768px;
+  background-size: cover;
   background-attachment: fixed;
   color: var(--main-text-color);
   font-family: var(--font-family);
-}
-
-@media (width < 1024px) and (width >= 768px) {
-  .page {
-    background-size: cover;
-  }
 }
 
 .header {
@@ -116,6 +110,7 @@
 }
 
 .header__theme-menu-button {
+  text-transform: uppercase;
   font-weight: 400;
   color: var(--angular-color);
   line-height: 100%;
@@ -123,7 +118,7 @@
   background: none;
   border-width: 1px;
   border-style: none;
-  border-color: #f1b2ce;
+  border-color: var(--hover-color);
   cursor: pointer;
 }
 
@@ -143,7 +138,7 @@
 .header__theme-menu-button_active {
   border: 1px solid;
   pointer-events: none;
-  border-color: #f1b2ce;
+  border-color: var(--hover-color);
 }
 
 @media (width < 1024px) and (width >= 768px) {
@@ -222,7 +217,6 @@
 @media (width <= 425px) {
   .header__title-text {
     width: 100%;
-    /* margin-right: 10px; */
   }
 }
 
@@ -297,7 +291,7 @@
 }
 
 .section__article-text-link {
-  text-shadow: 2px 3px 0px var(--link-shadow);
+  text-shadow: 2px 2px 0px var(--link-shadow);
 }
 
 .section__article-text-link:hover {
